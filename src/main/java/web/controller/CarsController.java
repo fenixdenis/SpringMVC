@@ -7,7 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import web.model.Car;
-import web.model.Service.CarService;
+import web.Service.CarService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;

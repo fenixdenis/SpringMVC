@@ -1,17 +1,22 @@
-package web.model.Service;
+package web.Service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static web.model.Car.cars;
+
 
 @Component
 public class CarServiceImpl implements CarService {
+
+    public List<Car> cars = List.of(
+            new Car(1, "Tesla Model S", "Electro"),
+            new Car(2, "Ford Mustang", "Dizel"),
+            new Car(3, "Toyota Corolla", "Hybrid"),
+            new Car(4, "Lada Kalina", "Benzin"),
+            new Car(5, "Volga", "Hybrid"));
 
     public List<Car> getCars(int count){
         if (count <= 0) {
